@@ -1,2 +1,2 @@
-language: Javascript
+language: node_js
 before_script: cd dist
