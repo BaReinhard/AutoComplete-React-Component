@@ -5,7 +5,7 @@ A simple react component that displays a list of values, of which you can filter
 npm install autocomplete-react-component@latest
 ```
 
-## Example Useage
+## Example Usage
 
 
 ```
