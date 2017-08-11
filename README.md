@@ -41,4 +41,19 @@ export default class UsingAutoComplete extends React.Component {
 ## Example Output
 ![Gif](https://im3.ezgif.com/tmp/ezgif-3-6e1739121e.gif)
 
+## API
+# **values** (Required)
+* An array of values that will be displayed
+
+# **onClick** (Required)
+* Returns the value of the item clicked, i.e the array Item clicked has a value of "JSON". onClick(value){} value will be equal to "JSON"
+
+# **listitemStyle** (Optional)
+* Styles the individual li elements in the dropdown display
+
+# **dropdownStyle** (Optional)
+* Styles the dropdown display element
+
+# **style** (Optional)
+* Styles the Containing Element of the Rendered AutoComplete Component
         
