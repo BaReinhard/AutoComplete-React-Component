@@ -48,7 +48,7 @@ export default class UsingAutoComplete extends React.Component {
 ### **onClick** (Required)
 * Returns the value of the item clicked, i.e the array Item clicked has a value of "JSON". onClick(value){} value will be equal to "JSON"
 
-### **listitemStyle** (Optional)
+### **valuesStyle** (Optional)
 * Styles the individual li elements in the dropdown display
 
 ### **dropdownStyle** (Optional)
