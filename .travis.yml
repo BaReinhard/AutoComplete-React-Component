@@ -1,1 +1,2 @@
+language: Javascript
 before_script: cd dist
