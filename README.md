@@ -1,4 +1,5 @@
-[![Build Status](http://inch-ci.org/bareinhard/AutoComplete-React-Component.png?branch=master)](http://inch-ci.org/bareinhard/AutoComplete-React-Component)
+[![Build Status](https://travis-ci.org/bareinhard/AutoComplete-React-Component.png?branch=master)](https://travis-ci.org/bareinhard/AutoComplete-React-Component)
+
 # AutoComplete-React-Component
 A simple react component that displays a list of values, of which you can filter via an input and select by clicking the value or pressing enter to choose the first displayed value.
 
