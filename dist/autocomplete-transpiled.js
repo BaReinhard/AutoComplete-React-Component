@@ -1,14 +1,14 @@
 'use strict';
 
 Object.defineProperty(exports, '__esModule', {
-	value: true
+	value: true,
 });
 
-var _index = require('/Users/Brett/projects/npm/AutoComplete-React-Component/node_modules/redbox-react/lib/index.js');
+var _index = require('redbox-react');
 
 var _index2 = _interopRequireDefault(_index);
 
-var _index3 = require('/Users/Brett/projects/npm/AutoComplete-React-Component/node_modules/react-transform-catch-errors/lib/index.js');
+var _index3 = require('react-transform-catch-errors');
 
 var _index4 = _interopRequireDefault(_index3);
 
@@ -16,7 +16,7 @@ var _react2 = require('react');
 
 var _react3 = _interopRequireDefault(_react2);
 
-var _index5 = require('/Users/Brett/projects/npm/AutoComplete-React-Component/node_modules/react-transform-hmr/lib/index.js');
+var _index5 = require('react-transform-hmr');
 
 var _index6 = _interopRequireDefault(_index5);
 
@@ -81,7 +81,7 @@ function _inherits(subClass, superClass) {
 		throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass);
 	}
 	subClass.prototype = Object.create(superClass && superClass.prototype, {
-		constructor: { value: subClass, enumerable: false, writable: true, configurable: true }
+		constructor: { value: subClass, enumerable: false, writable: true, configurable: true },
 	});
 	if (superClass)
 		Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : (subClass.__proto__ = superClass);
@@ -89,15 +89,15 @@ function _inherits(subClass, superClass) {
 
 var _components = {
 	AutoComplete: {
-		displayName: 'AutoComplete'
-	}
+		displayName: 'AutoComplete',
+	},
 };
 
 var _UsersBrettProjectsNpmAutoCompleteReactComponentNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
 	filename: 'lib/autocomplete.js',
 	components: _components,
 	locals: [module],
-	imports: [_react3.default]
+	imports: [_react3.default],
 });
 
 var _UsersBrettProjectsNpmAutoCompleteReactComponentNode_modulesReactTransformCatchErrorsLibIndexJs2 = (
@@ -107,7 +107,7 @@ var _UsersBrettProjectsNpmAutoCompleteReactComponentNode_modulesReactTransformCa
 	filename: 'lib/autocomplete.js',
 	components: _components,
 	locals: [],
-	imports: [_react3.default, _index2.default]
+	imports: [_react3.default, _index2.default],
 });
 
 function _wrapComponent(id) {
@@ -123,7 +123,7 @@ var style = {
 	color: 'black',
 	position: 'absolute',
 	zIndex: 500,
-	width: '400px'
+	width: '400px',
 };
 
 var AutoComplete = _wrapComponent('AutoComplete')(
@@ -141,11 +141,11 @@ var AutoComplete = _wrapComponent('AutoComplete')(
 			_this.openValues = function() {
 				_this.setState({
 					displayValues: true,
-					running: true
+					running: true,
 				});
 				setTimeout(function() {
 					_this.setState({
-						running: false
+						running: false,
 					});
 				}, 300);
 			};
@@ -165,7 +165,7 @@ var AutoComplete = _wrapComponent('AutoComplete')(
 					return val.toLowerCase().includes(value.toLowerCase());
 				});
 				_this.setState({
-					displayedValues: displayedValues
+					displayedValues: displayedValues,
 				});
 			};
 
@@ -173,7 +173,7 @@ var AutoComplete = _wrapComponent('AutoComplete')(
 				if (!_this.state.displayValues) {
 					_this.setState({
 						input: event.target.value,
-						displayValues: true
+						displayValues: true,
 					});
 				} else {
 					_this.setState({ input: event.target.value });
@@ -198,7 +198,7 @@ var AutoComplete = _wrapComponent('AutoComplete')(
 			_this.state = {
 				input: '',
 				displayValues: false,
-				displayedValues: _this.props.values
+				displayedValues: _this.props.values,
 			};
 			// Allow for Override of styles
 			style = _extends({}, style, props.style);
@@ -218,7 +218,7 @@ var AutoComplete = _wrapComponent('AutoComplete')(
 							tabIndex: '0',
 							className: 'autocomplete-container',
 							onClick: this.openValues,
-							onBlur: this.closeValues
+							onBlur: this.closeValues,
 						},
 						_react3.default.createElement('input', {
 							className: 'autocomplete-input',
@@ -227,18 +227,18 @@ var AutoComplete = _wrapComponent('AutoComplete')(
 							name: 'me',
 							value: this.state.input,
 							onChange: this.onInput,
-							onKeyDown: this.onEnterPress
+							onKeyDown: this.onEnterPress,
 						}),
 						_react3.default.createElement(_valuedisplay2.default, {
 							dropdownStyle: this.props.dropdownStyle,
 							displayValues: this.state.displayValues,
 							valuesStyle: this.props.valuesStyle,
 							displayedValues: this.state.displayedValues,
-							onClick: this.onClick
+							onClick: this.onClick,
 						}),
 					);
-				}
-			}
+				},
+			},
 		]);
 
 		return AutoComplete;
@@ -252,5 +252,5 @@ AutoComplete.propTypes = {
 	style: _propTypes2.default.object,
 	dropdownStyle: _propTypes2.default.object,
 	valuesStyle: _propTypes2.default.object,
-	onClick: _propTypes2.default.func.isRequired
+	onClick: _propTypes2.default.func.isRequired,
 };
