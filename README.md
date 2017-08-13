@@ -44,7 +44,7 @@ export default class UsingAutoComplete extends React.Component {
 ```
 
 ## Example Output
-![Gif](https://im3.ezgif.com/tmp/ezgif-3-6e1739121e.gif)
+![Gif](https://im3.ezgif.com/tmp/ezgif-3-ea6b582d5d.gif)
 
 ## API
 ### **values** (Required)
