@@ -1,2 +1,1 @@
-import AutoComplete from './dist/autocomplete-transpiled';
-export default AutoComplete;
+module.exports = require('./dist/index');
